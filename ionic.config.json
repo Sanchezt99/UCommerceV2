@@ -1,0 +1,7 @@
+{
+  "name": "UCommerce",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
