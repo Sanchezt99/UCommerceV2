@@ -45,7 +45,7 @@ const ProductsList: React.FC = () => {
         {products.map((obj, i) => {
           if (obj.name.toLowerCase().indexOf(searchText.toLowerCase()) === 0) {
             return (
-              <IonItem key={i} routerLink="/">
+              <IonItem key={i} routerLink='/'>
                 <IonAvatar>
                   <IonImg src={obj.src} />
                 </IonAvatar>
@@ -53,7 +53,7 @@ const ProductsList: React.FC = () => {
               </IonItem>
             );
           }
-          return <React.Fragment></React.Fragment>
+          return <React.Fragment></React.Fragment>;
         })}
       </IonList>
     </React.Fragment>
