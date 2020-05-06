@@ -1,0 +1,22 @@
+ion-header{
+    height: 80px;
+    background-color: #216353;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+ion-header ion-icon{
+    font-size: 2rem;
+}
+.home{
+    margin-left: 3%;
+}
+.user {
+    margin-right: 3%;
+}

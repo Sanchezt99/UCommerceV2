@@ -1,5 +1,6 @@
 import React from 'react';
-import { IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle} from '@ionic/react';
+import { IonIcon, IonHeader, IonButton, IonToolbar, IonButtons, IonBackButton, IonTitle} from '@ionic/react';
+import { person} from "ionicons/icons";
 
 const Header: React.FC = props => {
   return (
@@ -11,6 +12,9 @@ const Header: React.FC = props => {
         <IonTitle className="ion-text-center">
           UCommerce
         </IonTitle>
+        <IonButton className="user" color="tertiary" href="/User">
+                <IonIcon icon={person}/>
+            </IonButton>
       </IonToolbar>
     </IonHeader>
   );
