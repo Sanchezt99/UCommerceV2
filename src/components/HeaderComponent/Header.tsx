@@ -16,17 +16,17 @@ const Header: React.FC = (props) => {
       <IonToolbar color="secondary">
         <IonButtons slot="start">
           <IonBackButton />
-          <IonButton
+        </IonButtons>
+        <IonTitle className="ion-text-center">UCommerce</IonTitle>
+        <IonButton
             className="user"
             color="tertiary"
-            routerLink="/User"
+            routerLink="/"
             fill="clear"
             slot='end'
           >
             <IonIcon icon={person} />
           </IonButton>
-        </IonButtons>
-        <IonTitle className="ion-text-center">UCommerce</IonTitle>
       </IonToolbar>
     </IonHeader>
   );
