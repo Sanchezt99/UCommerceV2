@@ -8,7 +8,6 @@ import {
   IonCol,
   IonLabel,
   IonAvatar,
-  IonItem,
   IonIcon
 } from "@ionic/react";
 import "./User.css";
@@ -30,7 +29,7 @@ const profile = {
 const User: React.FC = () => {
   return (
     <IonPage>
-      <IonContent color="primary">
+      <IonContent>
         
         <Header/>
 
