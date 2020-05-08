@@ -9,21 +9,25 @@ import {
 } from "@ionic/react";
 
 type Product = {
+  id: string;
   src: string;
   name: string;
 };
 
 const products: Product[] = [
   {
-    src: "/",
+    id: "",
+    src: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Chocolate.jpg",
     name: "Chocolates",
   },
   {
-    src: "/",
+    id: "",
+    src: "https://hosteleriaecuador.com/wp-content/uploads/mondelez-13-3-min.jpg",
     name: "Chicles",
   },
   {
-    src: "/",
+    id: "",
+    src: "https://jumbocolombiafood.vteximg.com.br/arquivos/ids/159016-1000-1000/7702189001245.jpg?v=636106658587870000",
     name: "Mecato",
   },
 ];
