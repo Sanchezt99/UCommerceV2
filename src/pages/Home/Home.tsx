@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Home.css";
 
 /* Components */
-import Header from "../../components/HeaderComponent/Header";
+import Header from "../../components/Header/Header";
 import TypeSelector from "../../components/TypeSelector/TypeSelector";
 import ProductsList from "../../components/ProductList/ProductList";
 import ServiceList from "../../components/ServiceList/ServiceList";

@@ -24,13 +24,19 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import User from './pages/User/User';
+import Seller from './pages/Seller/Seller'
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/home" component={Home}/>
+      <Route path="/home" component={Home}/>
         <Redirect exact from="/" to="/home"></Redirect>
+      <Route path="/User" component={User}/>
+        <Redirect exact from="/" to="/User"></Redirect>
+      <Route path="/Seller" component={Seller}/>
+        <Redirect exact from="/" to="/Seller"></Redirect>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

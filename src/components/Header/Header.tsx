@@ -21,7 +21,7 @@ const Header: React.FC = (props) => {
         <IonButton
             className="user"
             color="tertiary"
-            routerLink="/"
+            routerLink="/User"
             fill="clear"
             slot='end'
           >
