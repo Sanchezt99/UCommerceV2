@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  IonList,
-  IonItem,
-  IonContent,
-  IonPage,
-  IonCard,
-} from "@ionic/react";
+import { IonList, IonItem, IonContent, IonPage, IonCard } from "@ionic/react";
 
 /* Components */
 
@@ -46,24 +40,18 @@ const ProductCategories: React.FC = () => {
       <Header />
       <IonContent>
         <IonCard className="center" color="secondary">
-          <ProductCategoryList />
+          <IonList color="secondary">
+            {availableProductsCategories.data.map((obj, i) => {
+              return (
+                <IonItem routerLink="/Products" key={i} lines="none">
+                  {obj.name}
+                </IonItem>
+              );
+            })}
+          </IonList>
         </IonCard>
       </IonContent>
     </IonPage>
-  );
-};
-
-const ProductCategoryList = () => {
-  return (
-    <IonList color="secondary">
-      {availableProductsCategories.data.map((obj, i) => {
-        return (
-          <IonItem routerLink="/Products" key={obj.id} lines="none">
-            {obj.name}
-          </IonItem>
-        );
-      })}
-    </IonList>
   );
 };
 

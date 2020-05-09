@@ -29,19 +29,15 @@ const profile = {
 const User: React.FC = () => {
   return (
     <IonPage>
-      <IonContent>
-        
-        <Header/>
-
+      <Header/>
+      <IonContent>       
         <IonCard className="center" color="secondary">
           <IonGrid>
-
             <IonRow>
               <IonCol className="label">
                 <IonLabel color="light">Mi perfil</IonLabel>
               </IonCol>
             </IonRow>
-
             <IonRow>
               <IonCol>
                   <IonAvatar className='avatar' >
@@ -50,7 +46,6 @@ const User: React.FC = () => {
                   </IonAvatar>
               </IonCol>
             </IonRow>
-
             <IonRow>
               <IonCol>
                 <IonRow>
@@ -60,7 +55,6 @@ const User: React.FC = () => {
                 </IonRow>
               </IonCol>
             </IonRow>
-
             <IonRow>
               <IonCol>
                 <IonRow>
@@ -70,7 +64,6 @@ const User: React.FC = () => {
                 </IonRow>
               </IonCol>
           </IonRow>
-
           <IonRow>
               <IonCol>
                 <IonRow>
@@ -80,7 +73,6 @@ const User: React.FC = () => {
                 </IonRow>
               </IonCol>
           </IonRow>
-
           <IonRow>
               <IonCol>
                 <IonRow>
@@ -90,7 +82,6 @@ const User: React.FC = () => {
                 </IonRow>
               </IonCol>
           </IonRow>
-
           <IonRow>
               <IonCol>
                 <IonRow>
@@ -101,10 +92,8 @@ const User: React.FC = () => {
               </IonCol>
           </IonRow>
           </IonGrid>
-
         </IonCard>
       </IonContent>
-
     </IonPage>
   );
 };

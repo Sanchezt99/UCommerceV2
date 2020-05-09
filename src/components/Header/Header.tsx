@@ -16,11 +16,25 @@ const Header: React.FC = (props) => {
         <IonButtons slot="start">
           <IonBackButton />
         </IonButtons>
-        <IonItem routerLink='/' color='secondary' lines='none' detail={false} className='ion-text-center' routerDirection='back'>
+        <IonItem
+          routerLink="/home"
+          color="secondary"
+          lines="none"
+          detail={false}
+          className="ion-text-center"
+          routerDirection="back"
+        >
           UCommerce
         </IonItem>
-        <IonItem slot="end" routerLink="/user" color="secondary" lines="none" detail={false}>
-          <IonIcon icon={person} />
+        <IonItem
+          slot="end"
+          className="ion-text-center ion-margin-end"
+          routerLink="/user"
+          color="secondary"
+          lines="none"
+          detail={false}
+        >
+          <IonIcon icon={person}></IonIcon>
         </IonItem>
       </IonToolbar>
     </IonHeader>
