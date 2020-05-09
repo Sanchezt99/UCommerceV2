@@ -85,7 +85,7 @@ const User: React.FC = () => {
               <IonCol>
                 <IonRow>
                   <IonCol className="data">
-                  Genereo:  {profile.gender}
+                  Género:  {profile.gender}
                   </IonCol>
                 </IonRow>
               </IonCol>

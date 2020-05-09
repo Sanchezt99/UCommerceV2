@@ -5,7 +5,6 @@ import {
   IonToolbar,
   IonButtons,
   IonBackButton,
-  IonTitle,
   IonItem,
 } from "@ionic/react";
 import { person } from "ionicons/icons";
@@ -17,9 +16,11 @@ const Header: React.FC = (props) => {
         <IonButtons slot="start">
           <IonBackButton />
         </IonButtons>
-        <IonTitle className="ion-text-center">UCommerce</IonTitle>
-        <IonItem slot="end" routerLink="/home/user" color='secondary' lines='none'>
-          <IonIcon icon={person}/>
+        <IonItem routerLink='/' color='secondary' lines='none' detail={false} className='ion-text-center' routerDirection='back'>
+          UCommerce
+        </IonItem>
+        <IonItem slot="end" routerLink="/user" color="secondary" lines="none" detail={false}>
+          <IonIcon icon={person} />
         </IonItem>
       </IonToolbar>
     </IonHeader>

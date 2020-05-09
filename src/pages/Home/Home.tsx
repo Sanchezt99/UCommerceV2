@@ -5,8 +5,7 @@ import "./Home.css";
 /* Components */
 import Header from "../../components/Header/Header";
 import TypeSelector from "../../components/TypeSelector/TypeSelector";
-import ProductsList from "../../components/ProductList/ProductList";
-import ServiceList from "../../components/ServiceList/ServiceList";
+import List from "../../components/List/List";
 
 const Home: React.FC = () => {
   const [type, setType] = useState<'p' | 's'>('p');
@@ -20,7 +19,7 @@ const Home: React.FC = () => {
       <Header />
       <IonContent className="ion-padding">
         <TypeSelector selectedType={type} onTypeChange={typeChange} />
-        {type === 'p'? <ProductsList />:<ServiceList/>}
+        <List typeList={type}/>
       </IonContent>
     </IonPage>
   );
