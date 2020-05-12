@@ -28,7 +28,7 @@ const sellers = {
 const Seller: React.FC = () => {
   return (
     <IonPage>
-      <Header />
+      <Header isUser={false}/>
       <IonContent>
         <IonCard className="center">
           <Vendedor />

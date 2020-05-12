@@ -43,7 +43,7 @@ const availableProducts = {
 const Products: React.FC = () => {
   return (
     <IonPage>
-      <Header />
+      <Header isUser={false}/>
       <IonContent>
         <IonCard className="center" color="secondary">
           <ProductList />

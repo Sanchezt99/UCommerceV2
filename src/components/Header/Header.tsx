@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { person } from "ionicons/icons";
 
-const Header: React.FC = (props) => {
+const Header: React.FC<{ isUser: boolean }> = (props) => {
   return (
     <IonHeader>
       <IonToolbar color="secondary">
@@ -26,16 +26,18 @@ const Header: React.FC = (props) => {
         >
           UCommerce
         </IonItem>
-        <IonItem
-          slot="end"
-          className="ion-text-center ion-margin-end"
-          routerLink="/user"
-          color="secondary"
-          lines="none"
-          detail={false}
-        >
-          <IonIcon icon={person}></IonIcon>
-        </IonItem>
+        {props.isUser ? undefined:(
+          <IonItem
+            slot="end"
+            className="ion-text-center ion-margin-end"
+            routerLink="/user"
+            color="secondary"
+            lines="none"
+            detail={false}
+          >
+            <IonIcon icon={person}></IonIcon>
+          </IonItem>
+        )}
       </IonToolbar>
     </IonHeader>
   );

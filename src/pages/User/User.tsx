@@ -15,6 +15,7 @@ import "./User.css";
 /* Components */
 
 import Header from "../../components/Header/Header"
+import { RouteComponentProps } from "react-router";
 
 
 const profile = {
@@ -26,10 +27,10 @@ const profile = {
   birthDate: "15/01/1998",
 }
 
-const User: React.FC = () => {
+const User: React.FC<RouteComponentProps> = (props) => {
   return (
     <IonPage>
-      <Header/>
+      <Header isUser={true}/>
       <IonContent>       
         <IonCard className="center" color="secondary">
           <IonGrid>

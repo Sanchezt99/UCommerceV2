@@ -37,7 +37,7 @@ const availableProductsCategories = {
 const ProductCategories: React.FC = () => {
   return (
     <IonPage>
-      <Header />
+      <Header isUser={false}/>
       <IonContent>
         <IonCard className="center" color="secondary">
           <IonList color="secondary">

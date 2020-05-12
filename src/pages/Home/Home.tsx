@@ -6,8 +6,9 @@ import "./Home.css";
 import Header from "../../components/Header/Header";
 import TypeSelector from "../../components/TypeSelector/TypeSelector";
 import List from "../../components/List/List";
+import { RouteComponentProps } from "react-router";
 
-const Home: React.FC = () => {
+const Home: React.FC<RouteComponentProps> = (props) => {
   const [type, setType] = useState<'p' | 's'>('p');
 
   const typeChange = (value: 'p'|'s') => {
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
 
   return (
     <IonPage>
-      <Header />
+      <Header isUser={false}/>
       <IonContent className="ion-padding">
         <TypeSelector selectedType={type} onTypeChange={typeChange} />
         <List typeList={type}/>
