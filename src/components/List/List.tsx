@@ -15,15 +15,15 @@ type Service = {
 
 const services: Service[] = [
   {
-    src: "/",
+    src: "https://scontent.fclo9-1.fna.fbcdn.net/v/t1.0-9/11061309_683079711803302_8282033642749883088_n.jpg?_nc_cat=104&_nc_sid=dd9801&_nc_eui2=AeGmXwHFWgn0qopLICHy31zPIwlnhIQhx6UjCWeEhCHHpSjICSgH0CP7HE6KaJF6DXg9HuSSRGTEU9r4eTF0AIYC&_nc_ohc=IUPi0971WeEAX81UFLH&_nc_ht=scontent.fclo9-1.fna&oh=a108de1a6708a06155078854298abfaf&oe=5EE121C2",
     name: "Monitorias",
   },
   {
-    src: "/",
+    src: "https://image.shutterstock.com/image-vector/vector-line-banner-concept-consulting-600w-797142808.jpg",
     name: "Asesorias",
   },
   {
-    src: "/",
+    src: "https://www.estrategiaynegocios.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=DAfpY3dUBRSM$j3xC8F_Lc$daE2N3K4ZzOUsqbU5sYt7OXw0$c4ANts28R8SQFyF6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg",
     name: "Cursos",
   },
 ];

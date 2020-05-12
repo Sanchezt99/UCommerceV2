@@ -8,9 +8,9 @@ import {
   IonCol,
   IonLabel,
   IonAvatar,
-  IonIcon,
   IonItem,
   IonImg,
+  IonButton,
 } from "@ionic/react";
 /* import "./User.css"; */
 
@@ -34,61 +34,59 @@ const User: React.FC<RouteComponentProps> = (props) => {
     <IonPage>
       <Header isUser={true} />
       <IonContent>
-        <IonCard className="ion-align-items-center" color="secondary">
+        <IonCard color="secondary">
           <IonGrid className="ion-text-center">
             <IonRow>
               <IonCol className="label">
                 <IonLabel color="light">Mi perfil</IonLabel>
               </IonCol>
             </IonRow>
-            <IonRow>
-              <IonCol>
-                <IonItem className='ion-align-items-center'>
-                  <IonAvatar className='ion-margin'>
-                    <IonImg src={profile.img} alt={profile.name} />
-                  </IonAvatar>
-                </IonItem>
+
+            <IonRow className='ion-justify-content-center'>
+              <IonCol className='ion-justify-content-end'>
+                <IonAvatar>
+                  <IonImg src={profile.img} alt={profile.name} />
+                </IonAvatar>
               </IonCol>
             </IonRow>
+
             <IonRow>
-              <IonCol>
-                <IonRow>
-                  <IonCol className="data">Nombre: {profile.name}</IonCol>
-                </IonRow>
+              <IonCol className="data">
+                Nombre: {profile.name}
               </IonCol>
             </IonRow>
+
             <IonRow>
-              <IonCol>
-                <IonRow>
-                  <IonCol className="data">Email: {profile.email}</IonCol>
-                </IonRow>
-              </IonCol>
+
+
+              <IonCol className="data">Email: {profile.email}</IonCol>
+
             </IonRow>
+
             <IonRow>
-              <IonCol>
-                <IonRow>
-                  <IonCol className="data">Telefono: {profile.phone}</IonCol>
-                </IonRow>
-              </IonCol>
+
+              <IonCol className="data">Telefono: {profile.phone}</IonCol>
+
             </IonRow>
+
             <IonRow>
-              <IonCol>
-                <IonRow>
-                  <IonCol className="data">Género: {profile.gender}</IonCol>
-                </IonRow>
-              </IonCol>
+
+              <IonCol className="data">Género: {profile.gender}</IonCol>
+
             </IonRow>
+
             <IonRow>
-              <IonCol>
-                <IonRow>
-                  <IonCol className="data">
-                    Fecha de nacimiento: {profile.birthDate}
-                  </IonCol>
-                </IonRow>
+
+              <IonCol className="data">
+                Fecha de nacimiento: {profile.birthDate}
               </IonCol>
+
             </IonRow>
+
           </IonGrid>
+          <IonButton routerLink="/Add" color="primary" expand="block">Agregar producto o servicio nuevo</IonButton>
         </IonCard>
+        
       </IonContent>
     </IonPage>
   );
