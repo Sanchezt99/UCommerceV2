@@ -29,6 +29,8 @@ import Seller from "./pages/Seller/Seller";
 import ProductCategories from "./pages/ProductCategories/ProductCategories"
 import Products from "./pages/Products/Products"
 import Add from "./pages/Add/Add"
+import Login from "./pages/Login/Login"
+import SingIn from "./pages/SingIn/SingIn"
 
 const App: React.FC = () => (
   <IonApp>
@@ -40,7 +42,9 @@ const App: React.FC = () => (
         <Route path="/seller" component={Seller} exact />
         <Route path="/productsCategories" component={ProductCategories} exact />
         <Route path="/products" component={Products} exact />
-        <Route path="/Add" component={Add} exact />
+        <Route path="/add" component={Add} exact />
+        <Route path="/login" component={Login} exact />
+        <Route path="/singIn" component={SingIn} exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

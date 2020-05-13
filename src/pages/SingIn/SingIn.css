@@ -1,0 +1,10 @@
+.data-information{
+    text-align: center;
+}
+.confirm-button{
+    color: #1e2023;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
