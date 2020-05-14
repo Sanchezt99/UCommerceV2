@@ -1,12 +1,13 @@
 .avatar{
-width: 150px;
-height: 150px;
+width: 30%;
+height: 30%;
 display: table;
 margin: 0 auto;
 margin-top: 15px;
 margin-bottom: 15px;
 text-align: center;
 }
+
 
 .data{
     display: table;
