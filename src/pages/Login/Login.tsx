@@ -2,16 +2,12 @@ import {
   IonContent,
   IonPage,
   IonButton,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonList,
   IonItem,
   IonLabel,
   IonCard,
   IonInput,
 } from "@ionic/react";
-import React, { useState } from "react";
+import React from "react";
 import "./Login.css";
 
 import { RouteComponentProps } from "react-router";

@@ -2,14 +2,12 @@ import {
   IonContent,
   IonPage,
   IonButton,
-  IonTitle,
-  IonList,
   IonItem,
   IonLabel,
   IonCard,
   IonInput,
 } from "@ionic/react";
-import React, { useState } from "react";
+import React from "react";
 import "./SingIn.css";
 
 import { RouteComponentProps } from "react-router";
