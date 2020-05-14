@@ -3,15 +3,10 @@ import {
   IonContent,
   IonPage,
   IonCard,
-  IonGrid,
-  IonRow,
-  IonCol,
   IonLabel,
   IonAvatar,
-  IonItem,
   IonImg,
   IonButton,
-  IonList,
   IonItemDivider,
 } from "@ionic/react";
 /* import "./User.css"; */

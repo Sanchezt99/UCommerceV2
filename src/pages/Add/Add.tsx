@@ -7,7 +7,6 @@ import {
   IonItem,
   IonButton,
   IonInput,
-  IonTitle,
   IonSelect,
   IonSelectOption,
   IonCardTitle,
