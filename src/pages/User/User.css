@@ -8,6 +8,9 @@ margin-bottom: 15px;
 text-align: center;
 }
 
+ion-list{
+    background: #75daad !important;
+}
 
 .data{
     display: table;
