@@ -7,57 +7,77 @@ import {
   IonCard,
   IonInput,
 } from "@ionic/react";
-import React from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
 
 import { RouteComponentProps } from "react-router";
 import Header from "../../components/Header/Header";
 
 const SignUp: React.FC<RouteComponentProps> = (props) => {
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [wppNumber, setWppNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [university, setU] = useState("");
+
+  function nameChange(e: CustomEvent) {
+    setName(e.detail.value);
+  }
+  function lastNameChange(e: CustomEvent) {
+    setLastName(e.detail.value);
+  }
+  function wppNumberChange(e: CustomEvent) {
+    setWppNumber(e.detail.value);
+  }
+  function emailChange(e: CustomEvent) {
+    const re = /[a-z0-9._%+-]+@eafit.edu.co/;
+    console.log(re.test(e.detail.value));
+    setEmail(e.detail.value);
+  }
+  function uChange(e: CustomEvent) {
+    setU(e.detail.value);
+  }
+
+  function register() {
+    console.log(name, lastName, wppNumber, email, university)
+  }
+
   return (
     <IonPage>
-      <Header isUser={false} />
+      <Header isUser={true} />
       <IonContent>
-        <IonCard>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Nombre
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Apellido
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Celular
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Email
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Universidad
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonButton color="success" expand="full" className="create-button">
-            Crear cuenta
-          </IonButton>
-          <IonInput></IonInput>
-          <IonInput></IonInput>
-        </IonCard>
+        <IonItem className="ion-margin">
+          <IonLabel position="floating">Nombre</IonLabel>
+          <IonInput onIonChange={nameChange}></IonInput>
+        </IonItem>
+        <IonItem className="ion-margin">
+          <IonLabel position="floating">Apellido</IonLabel>
+          <IonInput onIonChange={lastNameChange}></IonInput>
+        </IonItem>
+        <IonItem className="ion-margin">
+          <IonLabel position="floating">Numero Wpp</IonLabel>
+          <IonInput onIonChange={wppNumberChange}></IonInput>
+        </IonItem>
+        <IonItem className="ion-margin">
+          <IonLabel position="floating">Email</IonLabel>
+          <IonInput onIonChange={emailChange} type="email"></IonInput>
+        </IonItem>
+        <IonItem className="ion-margin">
+          <IonLabel position="floating">Universidad</IonLabel>
+          <IonInput onIonChange={uChange}></IonInput>
+        </IonItem>
+        <IonButton
+          color="primary"
+          expand="block"
+          className="ion-margin"
+          type="submit"
+          onClick={register}
+        >
+          Crear cuenta
+        </IonButton>
       </IonContent>
     </IonPage>
   );
 };
- 
+
 export default SignUp;

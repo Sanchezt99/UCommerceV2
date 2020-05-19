@@ -56,11 +56,11 @@ const User: React.FC<RouteComponentProps> = (props) => {
             <IonItem lines="none" color="secondary">
               <IonButton slot='start' color='tertiary'>
                 <IonLabel>Servicio</IonLabel>
-                <IonIcon icon={addOutline} className="bColor" slot="end"></IonIcon>
+                <IonIcon icon={addOutline} slot="end"></IonIcon>
               </IonButton>
               <IonButton slot='end' color='tertiary'>
                 <IonLabel>Producto</IonLabel>
-                <IonIcon icon={addOutline} className="bColor" slot='end'></IonIcon>
+                <IonIcon icon={addOutline} slot='end'></IonIcon>
               </IonButton>
             </IonItem>
           </IonCardContent>
