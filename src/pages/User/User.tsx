@@ -10,6 +10,8 @@ import {
   IonCardTitle,
   IonCardSubtitle,
   IonIcon,
+  IonItem,
+  IonLabel,
 } from "@ionic/react";
 /* import "./User.css"; */
 import "./User.css";
@@ -18,7 +20,7 @@ import "./User.css";
 
 import Header from "../../components/Header/Header";
 import { RouteComponentProps } from "react-router";
-import { createOutline } from "ionicons/icons";
+import { createOutline, addOutline } from "ionicons/icons";
 
 const profile = {
   name: "Pablo Pineda",
@@ -39,28 +41,28 @@ const User: React.FC<RouteComponentProps> = (props) => {
           <IonImg src={profile.img} alt={profile.name} />
 
           <IonCardHeader>
-            <IonCardSubtitle>Ing de sistemas</IonCardSubtitle>
-            <IonCardTitle>{profile.name}</IonCardTitle>
+            <IonItem color="secondary" lines="none">
+              <IonCardSubtitle>Ing de sistemas</IonCardSubtitle>
+            </IonItem>
+            <IonItem color="secondary" lines="none">
+              <IonCardTitle>{profile.name}</IonCardTitle>
+              <IonButton fill="clear">
+                <IonIcon icon={createOutline} className="bColor"></IonIcon>
+              </IonButton>
+            </IonItem>
           </IonCardHeader>
 
-          <IonCardContent className='ion-text-center'>
-            
-            <IonButton  fill="clear">
-              <IonIcon icon={createOutline}></IonIcon>
-            </IonButton>
-
-            {/* <IonList color="secondary">
-              <IonItem className="ion-margin" color="secondary">
-                <IonLabel>Género: {profile.gender}</IonLabel>
-              </IonItem>
-              <IonItem className="ion-margin" color="secondary">
-                <IonLabel>Fecha de nacimiento: {profile.birthDate}</IonLabel>
-              </IonItem>
-            </IonList>
-            
-            <IonButton routerLink="/Add" color="primary" expand="block">
-              Agregar producto o servicio nuevo
-            </IonButton> */}
+          <IonCardContent className="ion-text-center">
+            <IonItem lines="none" color="secondary">
+              <IonButton slot='start'>
+                <IonLabel>Servicio</IonLabel>
+                <IonIcon icon={addOutline} className="bColor" slot="end"></IonIcon>
+              </IonButton>
+              <IonButton slot='end'>
+                <IonLabel>Producto</IonLabel>
+                <IonIcon icon={addOutline} className="bColor" slot='end'></IonIcon>
+              </IonButton>
+            </IonItem>
           </IonCardContent>
         </IonCard>
       </IonContent>
