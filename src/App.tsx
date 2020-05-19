@@ -36,14 +36,14 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
+      <Route path="/login" component={Login} exact />
+      <Redirect exact from="/" to="/login"></Redirect>
         <Route path="/home" component={Home} exact />
-        <Redirect exact from="/" to="/home"></Redirect>
         <Route path="/user" component={User} exact />
         <Route path="/seller" component={Seller} exact />
         <Route path="/productsCategories" component={ProductCategories} exact />
         <Route path="/products" component={Products} exact />
         <Route path="/add" component={Add} exact />
-        <Route path="/login" component={Login} exact />
         <Route path="/signin" component={SingIn} exact />
       </IonRouterOutlet>
     </IonReactRouter>

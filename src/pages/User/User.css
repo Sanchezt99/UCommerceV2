@@ -1,21 +1,8 @@
-.avatar{
-width: 30%;
-height: 30%;
-display: table;
-margin: 0 auto;
-margin-top: 15px;
-margin-bottom: 15px;
-text-align: center;
-}
-
 ion-list{
     background: #75daad !important;
 }
 
-.data{
-    display: table;
-    margin: 0 auto;
-    text-align: center;
-    background: white;
+ion-icon {
     color: black;
+    font-size: 210%;
 }
