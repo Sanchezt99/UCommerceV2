@@ -29,7 +29,7 @@ import Seller from "./pages/Seller/Seller";
 import ProductCategories from "./pages/ProductCategories/ProductCategories"
 import Products from "./pages/Products/Products"
 import Add from "./pages/Add/Add"
-import Login from "./pages/Login/Login"
+import Login from "./pages/LogIn/Login"
 import SignUp from "./pages/SignUp/SignUp"
 
 const App: React.FC = () => (
