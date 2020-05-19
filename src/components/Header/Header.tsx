@@ -22,9 +22,8 @@ const Header: React.FC<{ isUser: boolean }> = (props) => {
           lines="none"
           detail={false}
           className="ion-text-center"
-          routerDirection="back"
-        >
-          UCommerce
+          routerDirection="back">
+          <img src="https://i.imgur.com/OIUUsN5.png" />
         </IonItem>
         {props.isUser ? undefined:(
           <IonItem
