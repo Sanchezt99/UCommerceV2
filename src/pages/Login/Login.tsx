@@ -18,7 +18,7 @@ const Login: React.FC<RouteComponentProps> = (props) => {
       <Header isUser={true} />
 
       <IonContent>
-        <IonItem>
+        <IonItem className='inputColor'>
           <IonLabel position="floating">email</IonLabel>
           <IonInput></IonInput>
         </IonItem>

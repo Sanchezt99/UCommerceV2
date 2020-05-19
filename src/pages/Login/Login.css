@@ -1,22 +1,3 @@
-.header{
-    text-align: center;
-    background: #1d5749;
-}
-.second-header{
-    flex: 1;
-    text-align: center;
-    text-decoration-style: solid;
-    color: #75daad;
-    padding-top: 20px;
-}
-.data-seller{
-    text-align: center;
-}
-.create-button{
-    background: #1e2023;
-    color: #1e2023;
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
+.inputColor{
+    color: black !important;
 }

@@ -54,11 +54,11 @@ const User: React.FC<RouteComponentProps> = (props) => {
 
           <IonCardContent className="ion-text-center">
             <IonItem lines="none" color="secondary">
-              <IonButton slot='start'>
+              <IonButton slot='start' color='tertiary'>
                 <IonLabel>Servicio</IonLabel>
                 <IonIcon icon={addOutline} className="bColor" slot="end"></IonIcon>
               </IonButton>
-              <IonButton slot='end'>
+              <IonButton slot='end' color='tertiary'>
                 <IonLabel>Producto</IonLabel>
                 <IonIcon icon={addOutline} className="bColor" slot='end'></IonIcon>
               </IonButton>
