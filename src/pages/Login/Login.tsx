@@ -14,50 +14,38 @@ import { RouteComponentProps } from "react-router";
 import Header from "../../components/Header/Header";
 
 const Login: React.FC<RouteComponentProps> = (props) => {
-  return (
-    <IonPage>
-      <Header isUser={false} />
+return (
+  <IonPage>
+    <Header isUser={false} />
 
-      <IonContent>
-        <IonCard>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Nombre
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              Apellido
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              celular
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              email
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonItem className="data-seller">
-            <IonLabel position="floating" color="Primary">
-              universidad
-            </IonLabel>
-            <IonInput></IonInput>
-          </IonItem>
-          <IonButton color="success" expand="full" className="create-button">
-            Crear cuenta
-          </IonButton>
+    <IonContent>
+      <IonCard>
+        <IonItem className="data-information">
+          <IonLabel position="floating" color="Primary">
+            email
+          </IonLabel>
           <IonInput></IonInput>
+        </IonItem>
+        <IonItem className="data-information">
+          <IonInput
+            type="password"
+            color="dark"
+            placeholder="Contraseña"
+          ></IonInput>
           <IonInput></IonInput>
-        </IonCard>
-      </IonContent>
-    </IonPage>
-  );
+        </IonItem>
+        <IonButton color="secondary" expand="full" className="confirm-button">
+          Ingresar
+        </IonButton>
+        <IonInput></IonInput>
+        <IonInput></IonInput>
+        <IonButton expand="full" className="confirm-button">
+          ¿Olvidaste tu contraseña?
+        </IonButton>
+        <IonInput></IonInput>
+      </IonCard>
+    </IonContent>
+  </IonPage>
+);
 };
 export default Login;
