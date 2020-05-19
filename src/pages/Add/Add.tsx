@@ -40,8 +40,6 @@ const Add: React.FC<RouteComponentProps> = (props) => {
           
           <IonCardTitle className='ion-margin'>{(type === 'p')? 'Agregar producto':'Agregar servicio'}</IonCardTitle>      
 
-          
-
           {
             (type === 'p')?
                 <IonItem className='ion-margin'>

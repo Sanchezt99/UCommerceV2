@@ -3,13 +3,8 @@ import {
   IonContent,
   IonPage,
   IonCard,
-  IonLabel,
-  IonAvatar,
   IonImg,
   IonButton,
-  IonItemDivider,
-  IonList,
-  IonItem,
   IonCardContent,
   IonCardHeader,
   IonCardTitle,
@@ -23,7 +18,7 @@ import "./User.css";
 
 import Header from "../../components/Header/Header";
 import { RouteComponentProps } from "react-router";
-import { callOutline, star, createOutline } from "ionicons/icons";
+import { createOutline } from "ionicons/icons";
 
 const profile = {
   name: "Pablo Pineda",
@@ -51,13 +46,7 @@ const User: React.FC<RouteComponentProps> = (props) => {
           <IonCardContent className='ion-text-center'>
             
             <IonButton  fill="clear">
-              <IonIcon icon={callOutline}></IonIcon>
-            </IonButton>
-            <IonButton  fill="clear">
-              <IonIcon icon={callOutline}></IonIcon>
-            </IonButton>
-            <IonButton  fill="clear">
-              <IonIcon icon={callOutline}></IonIcon>
+              <IonIcon icon={createOutline}></IonIcon>
             </IonButton>
 
             {/* <IonList color="secondary">

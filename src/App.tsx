@@ -29,7 +29,7 @@ import Seller from "./pages/Seller/Seller";
 import ProductCategories from "./pages/ProductCategories/ProductCategories"
 import Products from "./pages/Products/Products"
 import Add from "./pages/Add/Add"
-import Login from "./pages/LogIn/Login"
+import Login from "./pages/Login/Login"
 import SignUp from "./pages/SignUp/SignUp"
 
 const App: React.FC = () => (
@@ -44,7 +44,6 @@ const App: React.FC = () => (
         <Route path="/productsCategories" component={ProductCategories} exact />
         <Route path="/products" component={Products} exact />
         <Route path="/add" component={Add} exact />
-        <Route path="/login" component={Login} exact />
         <Route path="/signUp" component={SignUp} exact />
       </IonRouterOutlet>
     </IonReactRouter>
