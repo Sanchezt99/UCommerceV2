@@ -6,6 +6,7 @@ import {
   IonButtons,
   IonBackButton,
   IonItem,
+  IonImg,
 } from "@ionic/react";
 import { person } from "ionicons/icons";
 
@@ -23,7 +24,7 @@ const Header: React.FC<{ isUser: boolean }> = (props) => {
           detail={false}
           className="ion-text-center"
           routerDirection="back">
-          Ucommerce
+          <IonImg src="https://i.imgur.com/OIUUsN5t.png"></IonImg>
         </IonItem>
         {props.isUser ? undefined:(
           <IonItem
