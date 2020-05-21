@@ -8,6 +8,7 @@ import {
   IonGrid,
   IonRow,
   IonCol,
+  IonImg,
 } from "@ionic/react";
 import React from "react";
 import "./Login.css";
@@ -21,12 +22,18 @@ const Login: React.FC<RouteComponentProps> = (props) => {
       <Header isUser={true} />
 
       <IonContent>
+
+        <IonImg className="centerLogo" src="https://i.imgur.com/Xc031vQs.png"></IonImg>
+
+        <IonItem className="ion-text-center">
+        <IonLabel>"Lo quieres, Lo buscas, Lo tienes"</IonLabel>
+        </IonItem>
         <IonItem className="ion-margin" >
-          <IonLabel position="floating">email</IonLabel>
+          <IonLabel position="floating">Ingresa tu email</IonLabel>
           <IonInput type='email'></IonInput>
         </IonItem>
         <IonItem className='ion-margin'>
-          <IonLabel position="floating">contraseña</IonLabel>
+          <IonLabel position="floating">Ingresa tu contraseña</IonLabel>
           <IonInput type="password"></IonInput>
         </IonItem>
         <IonGrid>
@@ -38,7 +45,7 @@ const Login: React.FC<RouteComponentProps> = (props) => {
             </IonCol>
             <IonCol>
               <IonButton expand="block" className="ion-margin" routerLink='/signup'>
-                Nueva cuenta
+                Nuevo usuario
               </IonButton>
             </IonCol>
           </IonRow>

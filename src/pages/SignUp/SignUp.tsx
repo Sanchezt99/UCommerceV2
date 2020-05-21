@@ -5,6 +5,7 @@ import {
   IonItem,
   IonLabel,
   IonInput,
+  IonImg,
   IonSelect,
   IonSelectOption,
 } from "@ionic/react";
@@ -90,6 +91,11 @@ const SignUp: React.FC<RouteComponentProps> = (props) => {
     <IonPage>
       <Header isUser={true} />
       <IonContent>
+        <IonImg className="centerLogo" src="https://i.imgur.com/Xc031vQs.png"></IonImg>
+
+        <IonItem className="ion-text-center">
+        <IonLabel>"Lo quieres, Lo buscas, Lo tienes"</IonLabel>
+        </IonItem>
         <IonItem className="ion-margin">
           <IonLabel position="floating">Nombre</IonLabel>
           <IonInput onIonChange={nameChange} type="text"></IonInput>
