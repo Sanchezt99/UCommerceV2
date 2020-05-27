@@ -1,4 +1,4 @@
-import { IonContent, IonPage } from "@ionic/react";
+import { IonContent, IonPage, IonButton } from "@ionic/react";
 import React, { useState } from "react";
 import "./Home.css";
 
@@ -22,6 +22,7 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         <TypeSelector selectedType={type} onTypeChange={typeChange} />
         <List typeList={type}/>
       </IonContent>
+        <IonButton expand="block" className="ion-margin" routerLink='/add'> Agrega tu producto / servicio</IonButton>
     </IonPage>
   );
 };
