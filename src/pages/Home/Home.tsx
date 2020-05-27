@@ -22,7 +22,6 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         <TypeSelector selectedType={type} onTypeChange={typeChange} />
         <List typeList={type}/>
       </IonContent>
-        <IonButton expand="block" className="ion-margin" routerLink='/add'> Agrega tu producto / servicio</IonButton>
     </IonPage>
   );
 };
